@@ -1,0 +1,75 @@
+/* src/components/Footer.css */
+
+/* Smaller footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0; /* Reduced padding */
+    text-align: center;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px; /* Reduced margin */
+  }
+  
+  .footer-logo {
+    font-size: 20px; /* Reduced logo font size */
+    font-weight: bold;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 8px; /* Reduced margin for headers */
+    font-size: 16px; /* Reduced heading font size */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0; /* Reduced space between list items */
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Reduced link font size */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced gap between social icons */
+    font-size: 18px; /* Reduced icon size */
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f1c40f;
+  }
+  
+  .footer-bottom {
+    margin-top: 10px; /* Reduced margin */
+    font-size: 12px; /* Reduced font size for copyright */
+  }
+  
