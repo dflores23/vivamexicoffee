@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 import './Navbar.css';
-import logo from '../assets/logo.png'; // Import the logo image
+import Logo from '../assets/logo.png'; // Import the logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="MyLogo" className="logo-image" />
+        <img src={Logo} alt="MyLogo" className="logo-image" />
       </div>
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <NavLink exact="true" to="/" activeclassname="active-link" onClick={closeMenu}>
