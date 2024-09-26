@@ -11,7 +11,7 @@ const SpecialCoffee = () => {
 
   return (
     <>
-    <h1 className='special-coffee'>Special Mexican Coffee</h1>
+    <h1 className='c'>Special Mexican Coffee</h1>
     <div className="special-coffee-container">
       <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
       

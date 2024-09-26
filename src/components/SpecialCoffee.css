@@ -1,15 +1,15 @@
 /* src/components/SpecialCoffee.css */
-.special-coffee, .title {
+.special-coffee {
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-.special-coffee-container {
+.special-coffee-container, .title, .c{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Center the card vertically */
+  height: 11rem; /* Center the card vertically */
 }
 
 .card {
