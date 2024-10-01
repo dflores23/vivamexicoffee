@@ -37,6 +37,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
+  margin-top: 10px;
   border-radius: 12px;
   background-color: #FFA500; /* Matching background */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5); /* Neumorphism for links */
@@ -50,7 +51,7 @@ body {
 .hamburger {
   display: none;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 30%;
   padding: 10px;
   background-color: #FFA500;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Soft shadow for hamburger */
