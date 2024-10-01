@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 11rem; /* Center the card vertically */
+  height: 12rem; /* Center the card vertically */
 }
 
 .card {
@@ -35,14 +35,14 @@
 
 .card-back {
   transform: rotateY(180deg); /* Back side starts flipped */
-  background-color: #cfcdcd;
+  background-color: #FFA500;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
+  padding: 10x;
 }
 
 .card.flipped .card-front {

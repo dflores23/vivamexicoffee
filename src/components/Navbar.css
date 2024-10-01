@@ -8,13 +8,14 @@
 .logo-image {
   height: 50px; /* Adjust the size of the logo */
   width: auto;
+  border-radius: 50%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #FFA500;
   padding: 10px 20px;
 }
 
@@ -45,7 +46,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #FFA500;
   }
 
   .nav-links.open {
