@@ -14,7 +14,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Neumorphism shadow */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Neumorphism shadow for logo */
 }
 
 .navbar {
@@ -23,7 +23,7 @@ body {
   align-items: center;
   background-color: #FFA500;
   padding: 10px 20px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Soft shadow effect */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Soft shadow effect for navbar */
 }
 
 .nav-links {
@@ -37,24 +37,22 @@ body {
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
-  margin-top: 10px;
-  border-radius: 12px;
-  background-color: #FFA500; /* Matching background */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5); /* Neumorphism for links */
-  transition: all 0.2s ease; /* Smooth transition for hover effects */
+  border-radius: 5px;
+  background-color: #FFA500; /* Flat background color without shadows */
+  transition: background-color 0.2s ease; /* Smooth transition for hover effects */
 }
 
 .nav-links a:hover {
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.5); /* Pressed effect on hover */
+  background-color: #ff8c00; /* Simple color change on hover without shadow */
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
-  border-radius: 30%;
+  border-radius: 20%;
   padding: 10px;
   background-color: #FFA500;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Soft shadow for hamburger */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5); /* Soft shadow for hamburger */
 }
 
 .hamburger:hover {
@@ -67,12 +65,11 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     width: 100%;
     background-color: #FFA500;
-    padding: 20px 0;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Neumorphic shadow */
+    padding: 20px 60px;
   }
 
   .nav-links.open {
@@ -80,7 +77,7 @@ body {
   }
 
   .nav-links a {
-    padding: 10px 20px;
+    padding: 10px 50px;
     text-align: center;
   }
 
