@@ -29,7 +29,8 @@ body {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 10px;
+  width: 100%;
 }
 
 .nav-links a {
@@ -37,13 +38,14 @@ body {
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #FFA500; /* Flat background color without shadows */
   transition: background-color 0.2s ease; /* Smooth transition for hover effects */
 }
 
 .nav-links a:hover {
   background-color: #ff8c00; /* Simple color change on hover without shadow */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
 }
 
 .hamburger {
@@ -74,6 +76,7 @@ body {
 
   .nav-links.open {
     display: flex;
+    padding: 0px;
   }
 
   .nav-links a {
