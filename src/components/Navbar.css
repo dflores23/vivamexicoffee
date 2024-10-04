@@ -29,7 +29,7 @@ body {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 10px;
+  width: 20px;
   width: 100%;
 }
 
@@ -38,13 +38,14 @@ body {
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 4px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5);
   background-color: #FFA500; /* Flat background color without shadows */
   transition: background-color 0.2s ease; /* Smooth transition for hover effects */
 }
 
 .nav-links a:hover {
-  background-color: #ff8c00; /* Simple color change on hover without shadow */
+  background-color: #ffa12d; /* Simple color change on hover without shadow */
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
 }
 
@@ -67,21 +68,24 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     width: 100%;
-    background-color: #FFA500;
-    padding: 20px 60px;
+  
   }
 
   .nav-links.open {
     display: flex;
     padding: 0px;
+    background-color: #ffbf49;
+    margin: 10px 0px;
+    
   }
 
   .nav-links a {
     padding: 10px 50px;
     text-align: center;
+    margin-bottom: 5px;
   }
 
   .hamburger {
