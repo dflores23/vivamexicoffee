@@ -15,7 +15,7 @@ const SpecialCoffee = () => {
       <img src={Coffee} alt="Café de Olla" className="coffee-image" />
       <div className="special-coffee-container">
         <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
-          {/* Front side with the coffee image */}
+          {/* Front side with the description */}
           <div className="card-front">
             <h2>Café De Olla</h2>
             <p>

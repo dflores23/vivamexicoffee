@@ -11,8 +11,7 @@
 .special-coffee-title {
   text-align: center;
   margin-top: 2rem;
-  font-size: 3rem;
-  color: rgb(25 176 182);
+  font-size: 2rem;
 }
 
 .card {
@@ -51,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   padding: 10px;
 }
