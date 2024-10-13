@@ -5,7 +5,7 @@ import './Coffee.css'; // Optional, if you want to style the Home component
 const Home = () => {
   return (
     <div className="coffee-container">
-     <h1>Enjoy The Best Coffee.</h1>
+     <h1 className='title'>Enjoy The Best Coffee.</h1>
     </div>
   );
 };

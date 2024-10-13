@@ -1,18 +1,13 @@
 /* src/components/Home.css */
 
-.home-container {
-    text-align: center;
-    padding: 50px;
-    background-color: #f5f5f5;
-  }
-  
-  .home-container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .home-container p {
-    font-size: 18px;
-    color: #555;
-  }
-  
+.coffee-container {
+  text-align: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.title {
+  color:rgb(25 176 182);
+}
+
+
