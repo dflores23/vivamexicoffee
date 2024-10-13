@@ -1,6 +1,6 @@
 // src/components/Footer.js
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Social media icons
+import { FaInstagram } from 'react-icons/fa'; // Social media icons
 import './Footer.css';
 import logo from '../assets/logo.png';
 
@@ -19,7 +19,8 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/coffee">Coffee</a></li>
+            <li><a href="/special-coffee">Special Coffee</a></li>
           </ul>
         </div>
 

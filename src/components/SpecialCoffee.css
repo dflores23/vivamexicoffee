@@ -38,7 +38,7 @@
 
 .card-front {
   transform: rotateY(0deg);
-  background-color: rgb(65, 198, 255);
+  background-color: rgb(25 176 182);
   color: white;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
 
 .card-back {
   transform: rotateY(180deg);
-  background-color: rgb(65, 198, 255);
+  background-color: rgb(25 176 182);
   color: white;
   display: flex;
   justify-content: center;
@@ -86,14 +86,16 @@
 @media (max-width: 768px) {
   .card {
     width: 80vw;
-    height: 10rem;
+    height: 11rem;
   }
   .card-front, .card-back {
     height: auto;
+  
   }
   .coffee-image {
     width: 50vw;
     height: 50vw;
-    padding: 1rem;
+    padding: .5rem;
+    border-radius: 2rem;
   }
 }
