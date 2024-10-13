@@ -1,9 +1,4 @@
-.special-coffee {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Center the entire section vertically */
-}
+
 
 .special-coffee-container {
   display: flex;
@@ -16,7 +11,8 @@
 .special-coffee-title {
   text-align: center;
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgb(25 176 182);
 }
 
 .card {
@@ -55,7 +51,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
   padding: 10px;
 }
@@ -73,8 +68,10 @@
   height: 20rem;
   object-fit: cover;
   border-radius: 1rem;
-  margin: 20px auto;
-  display: block;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .price {
@@ -86,15 +83,15 @@
 @media (max-width: 768px) {
   .card {
     width: 80vw;
-    height: 11rem;
+    height: 12rem;
   }
   .card-front, .card-back {
     height: auto;
-  
+    padding: 0;
   }
   .coffee-image {
-    width: 50vw;
-    height: 50vw;
+    width: 80vw;
+    height: 60vw;
     padding: .5rem;
     border-radius: 2rem;
   }
