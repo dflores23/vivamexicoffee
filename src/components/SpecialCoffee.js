@@ -23,6 +23,7 @@ const SpecialCoffee = () => {
               canela, clavo, anís estrellado y endulzado con piloncillo. Hecho
               en una olla de barro mexicana o vasija de barro.
             </p>
+            <p>"Click for English"</p>
           </div>
           {/* Back side with the description */}
           <div className="card-back">
@@ -32,6 +33,7 @@ const SpecialCoffee = () => {
               cloves, star anise, and sweetened with piloncillo. Made in a
               Mexican olla de barro, or clay pot.
             </p>
+            <p>"Presiona para Español"</p>
           </div>
         </div>
       </div>
