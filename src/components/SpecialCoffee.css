@@ -21,6 +21,7 @@
   perspective: 1000px;
   position: relative;
   padding-bottom: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card-front,
@@ -79,8 +80,9 @@
 
 .price {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @media (max-width: 768px) {
