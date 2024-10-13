@@ -11,22 +11,31 @@ const SpecialCoffee = () => {
 
   return (
     <>
-    <h1 className='c'>Special Mexican Coffee</h1>
-    <div className="special-coffee-container">
-      <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
-      
-        {/* Front side with the coffee image */}
-        <div className="card-front">
-          <img src={Coffee} alt="Special Coffee" className="coffee-image" />
-        </div>
-        {/* Back side with the description */}
-        <div className="card-back">
-          <h2>Café De Olla</h2>
-          <p>Café de Olla is a traditional Mexican coffee spiced with cinnamon, cloves, star anise and sweetened with piloncillo. Made in a Mexican olla de barro, or clay pot.</p>
+      <h1 className="special-coffee-title">Special Mexican Coffee</h1>
+      <img src={Coffee} alt="Café de Olla" className="coffee-image" />
+      <div className="special-coffee-container">
+        <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+          {/* Front side with the coffee image */}
+          <div className="card-front">
+            <h2>Café De Olla</h2>
+            <p>
+              Café de Olla es un café tradicional mexicano condimentado con
+              canela, clavo, anís estrellado y endulzado con piloncillo. Hecho
+              en una olla de barro mexicana o vasija de barro.
+            </p>
+          </div>
+          {/* Back side with the description */}
+          <div className="card-back">
+            <h2>Café De Olla</h2>
+            <p>
+              Café de Olla is a traditional Mexican coffee spiced with cinnamon,
+              cloves, star anise, and sweetened with piloncillo. Made in a
+              Mexican olla de barro, or clay pot.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <p class='title'>Café de olla $ 4.50</p>
+      <p className="price">Café de olla $4.50</p>
     </>
   );
 };

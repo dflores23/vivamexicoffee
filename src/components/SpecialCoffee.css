@@ -1,61 +1,99 @@
-
 .special-coffee {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.special-coffee-container, .title, .c{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12rem; /* Center the card vertically */
+  height: 100vh; /* Center the entire section vertically */
+}
+
+.special-coffee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+}
+
+.special-coffee-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .card {
   width: 18rem;
   height: 20rem;
-  perspective: 1000px; /* Perspective to create 3D effect */
-  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
 }
 
 .card-front,
 .card-back {
-  width: 18rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  backface-visibility: hidden; /* Hide the back side when not flipped */
-  transition: transform 0.6s ease-in-out; /* Smooth flip transition */
-  border-radius: 2rem;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+  border-radius: 1rem;
 }
 
 .card-front {
-  transform: rotateY(0deg); /* Front side stays in place */
-}
-
-.card-back {
-  transform: rotateY(180deg); /* Back side starts flipped */
-  background-color: Orange;
+  transform: rotateY(0deg);
+  background-color: rgb(65, 198, 255);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 10x;
+  padding: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(65, 198, 255);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
 
 .card.flipped .card-front {
-  transform: rotateY(180deg); /* Flip front side when active */
+  transform: rotateY(180deg);
 }
 
 .card.flipped .card-back {
-  transform: rotateY(360deg); /* Rotate back side into view */
+  transform: rotateY(360deg);
 }
 
 .coffee-image {
-  width: 18rem;
+  width: 19rem;
   height: 20rem;
-  object-fit: cover; 
-  border-radius: 2rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 20px auto;
+  display: block;
+}
+
+.price {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    height: 10rem;
+  }
+  .card-front, .card-back {
+    height: auto;
+  }
+  .coffee-image {
+    width: 50vw;
+    height: 50vw;
+    padding: 1rem;
+  }
 }
