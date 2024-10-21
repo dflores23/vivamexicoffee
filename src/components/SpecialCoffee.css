@@ -26,6 +26,7 @@
   perspective: 1000px;
   position: relative;
   margin-top: 1rem;
+  margin-right: 2rem;
   padding: 1rem;
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
@@ -67,12 +68,12 @@
     width: 90vw; /* Fully responsive */
     height: auto;
     max-height: 70vw;
-    margin-top: 2rem;
+    margin-top: auto;
   }
 
   .card {
     width: 90vw;
-    margin-top: 1rem;
+    
   }
 
   .card-content {
