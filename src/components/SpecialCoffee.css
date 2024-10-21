@@ -1,7 +1,8 @@
 .special-coffee-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 2rem; /* Adds spacing between coffee items */
   position: relative;
 }
 
@@ -12,52 +13,70 @@
   color: rgb(25, 176, 182);
 }
 
+.coffee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem; /* Adds space between items */
+}
+
 .card {
-  width: 100vh;
-  height: 40vh;
+  width: 45vh; /* Decreased width for better spacing */
+  max-width: 100%; /* Prevents the card from overflowing the container */
   perspective: 1000px;
   position: relative;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
+  box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 .card-content {
-  width: 95%;
-  height: 100%;
+  width: 100%;
+  height: auto; /* Dynamic height */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 15px;
- 
+  padding: 1rem;
   border-radius: 1rem;
   background-color: rgb(25, 176, 182);
   color: white;
-  /* backface-visibility: hidden; */
   transition: transform 0.6s ease-in-out;
 }
 
 .coffee-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vh;
-  height: 80vh;
+  width: 45vh; /* Decreased width for better spacing */
+  max-width: 100%; /* Prevents image from overflowing */
+  height: auto; /* Allow the height to adjust automatically */
+  max-height: 40vh; /* Limits the height to avoid excessive scaling */
   object-fit: cover;
   border-radius: 1rem;
-  margin: 1rem auto;
 }
 
 .price {
   text-align: center;
+  margin-top: 0.5rem;
   font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
-  .card, .coffee-image {
-    width: 80vw;
-    height: 70vw;
+  .coffee-image {
+    width: 90vw; /* Fully responsive */
+    height: auto;
+    max-height: 70vw;
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: 90vw;
+    margin-top: 1rem;
+  }
+
+  .card-content {
+    height: auto;
+    padding: 1rem;
   }
 }
