@@ -1,8 +1,8 @@
-/* src/components/Navbar.css */
-
 body {
   background-color: #f0f0f3; /* Soft background color typical for Neumorphism */
   font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -23,13 +23,13 @@ body {
   align-items: center;
   background-color: #FFA500;
   padding: 10px 20px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7); /* Soft shadow effect for navbar */
+  position: relative;
+  z-index: 1000; /* Ensure navbar stays on top */
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 20px;
   width: 100%;
 }
 
@@ -37,7 +37,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 10px 12px;
   border-radius: 4px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5);
   background-color: #FFA500; /* Flat background color without shadows */
@@ -45,21 +45,21 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #ffa12d; /* Simple color change on hover without shadow */
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.7);
+  background-color: rgb(25, 176, 182);
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
   border-radius: 20%;
-  padding: 10px;
+  padding: 15px;
   background-color: #FFA500;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5); /* Soft shadow for hamburger */
 }
 
 .hamburger:hover {
-  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1), inset -8px -8px 16px rgba(255, 255, 255, 0.7); /* Pressed-in effect */
+  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.1), inset -8px -8px 16px rgba(255, 255, 255, 0.7); 
+  background-color: rgb(25, 176, 182);
 }
 
 /* Responsive styles for smaller screens */
@@ -68,27 +68,31 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 60px; /* Adjusted to align below the navbar */
     left: 0;
     width: 100%;
-  
+    z-index: 999; /* Ensures nav-links stay above other content when open */
+    background-color: #ffbf49; /* Background color of the opened navbar */
   }
 
   .nav-links.open {
     display: flex;
     padding: 0px;
-    background-color: #ffbf49;
-    margin: 10px 0px;
-    
+    margin-top: 19px;
   }
 
   .nav-links a {
     padding: 10px 50px;
     text-align: center;
-    margin-bottom: 5px;
-  }
+    margin-bottom: 4px;
+    }
 
   .hamburger {
     display: block;
+  }
+
+  /* Ensures that the main content (like images) is pushed down when the nav is open */
+  .nav-open + .content {
+    margin-top: 200px; /* Adjust this based on the height of your open navbar */
   }
 }
