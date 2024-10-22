@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './SpecialCoffee.css';
-import Coffee1 from '../assets/café de ólla.webp';
-import Coffee2 from '../assets/café de ólla.webp';
-import Coffee3 from '../assets/cafe lechero.webp';
-import Coffee4 from '../assets/café de ólla.webp';
-import Coffee5 from '../assets/café de ólla.webp';
-import Coffee6 from '../assets/café de ólla.webp';
-import Coffee7 from '../assets/café de ólla.webp';
+import Coffee1 from '../assets/cafe-de-olla.jpg';
+import Coffee2 from '../assets/cafe-de-olla.jpg';
+import Coffee3 from '../assets/cafe-de-olla.jpg';
+import Coffee4 from '../assets/cafe-de-olla.jpg';
+import Coffee5 from '../assets/cafe-de-olla.jpg';
+import Coffee6 from '../assets/cafe-de-olla.jpg';
+import Coffee7 from '../assets/cafe-de-olla.jpg';
 // Data for all coffee items
 const coffeeItems = [
   {
