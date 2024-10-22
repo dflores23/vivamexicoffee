@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './SpecialCoffee.css';
-import Coffee1 from '../assets/cafe-de-olla.jpg';
-import Coffee2 from '../assets/cafe-de-olla.jpg';
-import Coffee3 from '../assets/cafe-de-olla.jpg';
-import Coffee4 from '../assets/cafe-de-olla.jpg';
-import Coffee5 from '../assets/cafe-de-olla.jpg';
-import Coffee6 from '../assets/cafe-de-olla.jpg';
-
+import Coffee1 from '../assets/café de ólla.webp';
+import Coffee2 from '../assets/café de ólla.webp';
+import Coffee3 from '../assets/cafe lechero.webp';
+import Coffee4 from '../assets/café de ólla.webp';
+import Coffee5 from '../assets/café de ólla.webp';
+import Coffee6 from '../assets/café de ólla.webp';
+import Coffee7 from '../assets/café de ólla.webp';
 // Data for all coffee items
 const coffeeItems = [
   {
@@ -22,82 +22,97 @@ const coffeeItems = [
       description: "Café de Olla is a traditional Mexican coffee spiced with cinnamon, cloves, star anise, and sweetened with piloncillo. Made in a Mexican olla de barro, or clay pot.",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 4.50",
+    price: "$ 3.64 / $ 3.90",
   },
   {
     id: 2,
     image: Coffee2,
     es: {
-      title: "Café Espresso",
-      description: "Un espresso fuerte y concentrado, el favorito de los amantes del café.",
+      title: "Café de Olla Con Leche",
+      description: "Café de Olla es un café tradicional mexicano condimentado con canela, clavo, anís estrellado y endulzado con piloncillo. Hecho en una olla de barro mexicana o vasija de barro.",
       languageToggle: "Click for English",
     },
     en: {
-      title: "Espresso Coffee",
-      description: "A strong, concentrated espresso, the favorite of coffee lovers.",
+      title: "Café De Olla With Milk",
+      description: "Café de Olla is a traditional Mexican coffee spiced with cinnamon, cloves, star anise, and sweetened with piloncillo. Made in a Mexican olla de barro, or clay pot.",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 3.00",
+    price: "$ 4.94",
   },
   {
     id: 3,
     image: Coffee3,
     es: {
-      title: "Café Americano",
-      description: "Un café negro suave hecho con espresso y agua caliente.",
+      title: "Café Lechero",
+      description: "Una deliciosa mezcla de café fuerte y cremoso con leche caliente, el Café Lechero ofrece una bebida suave y reconfortante perfecta para cualquier momento del día. Endulzado al gusto y a menudo decorado con un toque de canela, es una elección deliciosa para comenzar la mañana o disfrutar como un capricho por la tarde.",
       languageToggle: "Click for English",
     },
     en: {
-      title: "Americano Coffee",
-      description: "A smooth black coffee made with espresso and hot water.",
+      title: "Café Lechero",
+      description: "A delightful blend of rich, strong coffee and creamy hot milk, Café Lechero offers a smooth and comforting beverage perfect for any time of day. Sweetened to taste and often garnished with a hint of cinnamon, it’s a delicious choice to start your morning or enjoy as an afternoon treat.",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 3.50",
+    price: "$ 4.16 / $ 4.42",
   },
   {
     id: 4,
     image: Coffee4,
     es: {
-      title: "Café Latte",
-      description: "Un espresso mezclado con leche al vapor y una fina capa de espuma.",
+      title: "Latte De Olla",
+      description: "Disfruta de un giro cálido y aromático en el café tradicional con nuestro Latte de Olla. Infundido con especias como canela y piloncillo, este reconfortante bebida combina un rico espresso y leche vaporizada para lograr un equilibrio perfecto de sabor. Decorado con un toque de canela, es un capricho ideal para cualquier momento del día, capturando la esencia de las tradicionales costumbres cafeteras.",
       languageToggle: "Click for English",
     },
     en: {
       title: "Latte Coffee",
-      description: "An espresso mixed with steamed milk and a thin layer of foam.",
+      description: "Experience a warm and aromatic twist on traditional coffee with our Latte de Olla. Infused with spices like cinnamon and piloncillo (unrefined cane sugar), this comforting beverage combines rich espresso and steamed milk for a perfect balance of flavor. Topped with a sprinkle of cinnamon, it's an ideal treat for any time of day, capturing the essence of cozy coffee traditions.",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 4.00",
+    price: "$ 5.20 / $5.46 / $5.72",
   },
   {
     id: 5,
     image: Coffee5,
     es: {
-      title: "Café Cappuccino",
-      description: "Una deliciosa combinación de espresso, leche al vapor y mucha espuma.",
+      title: "Mocha Mexicano",
+      description: "Deléitate con nuestra Moca Mexicana, una rica y sabrosa variación del clásico favorito. Esta decadente bebida combina un espresso intenso con leche vaporizada y un delicioso jarabe de chocolate, realzada con un toque de canela y un poco de chile en polvo para un agradable sabor picante. Endulzada a la perfección, es el capricho ideal para satisfacer tus antojos de chocolate mientras abrazas los vibrantes sabores de México. ¡Disfrútala caliente o helada para una deliciosa experiencia cafetera!",
       languageToggle: "Click for English",
     },
     en: {
-      title: "Cappuccino Coffee",
-      description: "A delicious combination of espresso, steamed milk, and lots of foam.",
+      title: "Mexican Mocha",
+      description: "ndulge in our Mexican Mocha, a rich and flavorful twist on the classic favorite. This decadent beverage features bold espresso combined with velvety steamed milk and luscious chocolate syrup, enhanced by a hint of cinnamon and a touch of chili powder for a warm, spicy kick. Sweetened to perfection, it’s the ideal treat to satisfy your chocolate cravings while embracing the vibrant flavors of Mexico. Enjoy it hot or iced for a delightful coffee experience!",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 4.50",
+    price: "$ 5.46 / $ 5.73 / $5.98",
   },
   {
     id: 6,
     image: Coffee6,
     es: {
-      title: "Café Mocha",
-      description: "Una mezcla de espresso, chocolate y leche al vapor.",
+      title: "Raspadito",
+      description: "Refresca tu día con nuestro Raspadito, una bebida de café helado que combina los sabores intensos del café con una deliciosa mezcla de jarabes dulces. El hielo raspado crea una textura esponjosa perfecta, mientras que el jarabe de chocolate o vainilla añade un toque de indulgencia. Decorado con crema batida y un toque de chocolate o canela, este dulce capricho es ideal para los días cálidos o cada vez que anheles una deliciosa experiencia cafetera congelada.",
       languageToggle: "Click for English",
     },
     en: {
-      title: "Mocha Coffee",
-      description: "A blend of espresso, chocolate, and steamed milk.",
+      title: "Raspadito",
+      description: "Cool down with our Raspadito, a refreshing frozen coffee drink that combines the bold flavors of brewed coffee with a delightful blend of sweet syrups. Shaved ice creates a perfect, fluffy texture, while rich chocolate or vanilla syrup adds a touch of indulgence. Topped with whipped cream and a sprinkle of chocolate or cinnamon, this sweet treat is perfect for warm days or anytime you crave a deliciously icy coffee experience!",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 5.00",
+    price: "$ 6.24",
+  },
+  {
+    id: 7,
+    image: Coffee7,
+    es: {
+      title: "Affogado",
+      description: "Disfruta de un delicioso capricho con nuestro Affogato, un clásico postre italiano que combina a la perfección dos de los mayores placeres de la vida: el espresso y el helado. Una bola de cremoso helado de vainilla es generosamente ahogada en un chorro de espresso caliente y rico, creando un contraste perfecto de temperaturas y sabores. El resultado es un exquisito manjar que se derrite en la boca, ideal como postre o para un momento especial de café.",
+      languageToggle: "Click for English",
+    },
+    en: {
+      title: "Affogado",
+      description: "Experience a delightful indulgence with our Affogato, a classic Italian dessert that beautifully combines two of life's greatest pleasures: espresso and ice cream. A scoop of creamy vanilla ice cream is generously drowned in a shot of hot, rich espresso, creating a perfect contrast of temperatures and flavors. The result is a luscious, melt-in-your-mouth treat that’s both refreshing and satisfying. Enjoy it as a dessert or a special coffee break!",
+      languageToggle: "Presiona para Español",
+    },
+    price: "$ 4.94",
   },
 ];
 
