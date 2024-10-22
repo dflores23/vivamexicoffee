@@ -112,7 +112,7 @@ const coffeeItems = [
       description: "Experience a delightful indulgence with our Affogato, a classic Italian dessert that beautifully combines two of life's greatest pleasures: espresso and ice cream. A scoop of creamy vanilla ice cream is generously drowned in a shot of hot, rich espresso, creating a perfect contrast of temperatures and flavors. The result is a luscious, melt-in-your-mouth treat that’s both refreshing and satisfying. Enjoy it as a dessert or a special coffee break!",
       languageToggle: "Presiona para Español",
     },
-    price: "$ 4.94",
+    price: "$ 4.84",
   },
 ];
 
