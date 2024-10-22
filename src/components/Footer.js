@@ -16,12 +16,11 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/coffee">Coffee</a></li>
-            <li><a href="/special-coffee">Special Coffee</a></li>
-          </ul>
+          <h4>Address</h4>
+            <p>4900 E. Colfax Ave, Denver, CO 80220</p>
+            <h4>Hours of Operation</h4>
+            <p>7am - 3pm</p>
+          
         </div>
 
         {/* Social Media Links */}

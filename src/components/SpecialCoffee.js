@@ -3,7 +3,7 @@ import './SpecialCoffee.css';
 import Coffee1 from '../assets/cafedeolla.jpg';
 import Coffee2 from '../assets/cafedeolla.jpg';
 import Coffee3 from '../assets/cafelechero.jpg';
-import Coffee4 from '../assets/cafe-de-olla.jpg';
+import Coffee4 from '../assets/lattedeolla.jpg';
 import Coffee5 from '../assets/cafe-de-olla.jpg';
 import Coffee6 from '../assets/cafe-de-olla.jpg';
 import Coffee7 from '../assets/cafe-de-olla.jpg';
